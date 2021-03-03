@@ -6,7 +6,7 @@ import com.everis.listadecontatos.helpers.HelperDB
 class ContatoApplication : Application() {
 
     var helperDB: HelperDB? = null
-        private set
+        private set //bloqueada para SET externo, apenas GET
 
     companion object {
         lateinit var instance: ContatoApplication
